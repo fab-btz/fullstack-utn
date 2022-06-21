@@ -1,0 +1,2 @@
+Este archivo ta fue commiteado.
+Se realizo un git status y la branch estab limpia. Ahora con estas lineas lo estamos modificanco para hacer un git status nuevamente y ver si el archivo fue modificado.
