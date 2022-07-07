@@ -1,0 +1,135 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    color: whitesmoke;
+    background: #5e616e;
+}
+
+a{
+    color: white;
+}
+
+    a:hover{
+        color: aqua;
+    }
+    
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    text-justify: auto;
+    width: 80%;
+    border-collapse: collapse;
+    
+}
+
+    th{
+        padding: 10px;
+        text-align: center;
+        border: solid black;
+    }
+
+    td{
+        padding: 20px;
+        border: solid black;
+    }
+
+    thead{
+        background: #a3b0f1;
+        border-bottom: solid 5px black;
+        color: black;
+    }
+
+    .header{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        color: rgb(240, 240, 248);
+        background-color: rgb(31, 30, 30)
+    }
+
+p{
+    margin-top: 20px;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-justify: auto;
+    width: 95%;
+}
+
+.img{
+    margin-top: -0.5em;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-footer{
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+    font-family: cursive;
+    font-size: small;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.left{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 21%;
+}
+
+.input{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 400px;
+    height: 25px;
+}
+
+textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 400px;
+    height: 150px;
+}
+
+.button{
+    margin-bottom: 2em;
+    background-color: green;
+    color:white;
+    border: solid green;
+    margin-right: 20em;
+    width: 80px;
+    height: 30px;
+}
+.button:hover{
+    background-color: greenyellow;
+    border: solid greenyellow;
+    color: black;
+}
+.btn{ 
+    margin-bottom: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+span{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+

@@ -5,67 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV- Benitez Ocampo Victor Fabián</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="card">
-            <div class="card-header">
-                <h1 class="d-flex justify-content-center">Benitez Ocampo Victor Fabián</h1>
-            </div>
+        <div class="header">
+                <h1>Benitez Ocampo Victor Fabián</h1>
         </div>
     </header>
     </br>
     <section>
-        <div class="d-flex justify-content-center">      
-            <div class="card">
-                <div class="card-body">
-                    <h2>Contacto</h2>
-                    <p>Si desea contactarme rellene el siguiente Formulario</p>
+        <div class="container">      
+            <h2>Contacto</h2>
+            <p>Si desea contactarme rellene el siguiente Formulario</p>            
+            <form action="#" method="POST">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" class="input" autofocus/><br>
                 </div>
-                <div class="card-body">
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" class="form-control" autofocus/>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" name="email" id="email" placeholder="Ingrese su Email" class="form-control"/>    
-                        </div>
-                        <div class="mb-3">
-                            <input type="number" name="phone" id="phone" placeholder="Ingrese su Telefono" class="form-control"/>
-                        </div>
-                        <div class="mb-3">
-                            <textarea name="query" id="query" cols="30" rows="10" placeholder="Ingrese el motivo se su consulta" class="form-control" ></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Recibir Novedades</label>
-                        </div>
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <a href="index.html" class="btn btn-second">Volver</a>                     
-                        </div>
-                    </form>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su Email" class="input"/>    
                 </div>
-                <div class="card-footer">
-                    <p>Otros Medios de Contacto</p>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Whatsapp</a>
-                    <a href="#">Telegram</a>
-                    <a href="#">Linkedin</a>
+                <div>
+                    <input type="number" name="phone" id="phone" placeholder="Ingrese su Telefono" class="input"/>
                 </div>
-            </div>
+                <div>
+                    <textarea name="query" id="query" cols="30" rows="10" placeholder="Ingrese el motivo se su consulta"></textarea>
+                </div>
+                <div class="left">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="input" for="exampleCheck1">Recibir Novedades</label>
+                </div></br></br>
+                <div class="btn">
+                    <button type="submit" class="button">Enviar</button>
+                    <a href="index.html" class="">Volver</a>                     
+                </div>
+            </form>   
+            <p style="color:black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Otros Medios de Contacto</p> </br>
+            <a href="#">Facebook</a> <span> | </span>
+            <a href="#">Instagram</a><span> | </span>
+            <a href="#">Whatsapp</a><span> | </span>
+            <a href="#">Telegram</a><span> | </span>
+            <a href="#">Linkedin</a> 
         </div>
     </section>
     </br></br>
     <footer>
-        <div class="card">
-            <div class="card-header">
-                <p class="text-center">Copyright © 2022 - Todos los dereachos reservados.</p>
-            </div>
+        <div class="header">
+                <p>Copyright © 2022 - Todos los dereachos reservados.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
