@@ -1,22 +1,61 @@
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     color: whitesmoke;
     background: #5e616e;
+    background: radial-gradient(circle farthest-corner at center center, #5e616e 10%, #272727 60%, #5e616e 80%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #5e616e 10%, #272727 60%, #5e616e 80%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #5e616e 10%, #272727 60%, #5e616e 80%);
+    font-family: 'Nunito', sans-serif;
+    /*background: #5e616e;*/
 }
 
-a{
+img {
+    box-shadow: 25px 12px 17px -1px rgba(250,128,128,0.76);
+    border-radius: 50px;
+}
+
+.header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    color: rgb(240, 240, 248);
+    background: #000000;
+    background: linear-gradient(0deg, #000000 0%, #6c746c 80%);
+    background: -webkit-linear-gradient(0deg, #000000 0%, #6c746c 80%);
+    background: -moz-linear-gradient(0deg, #000000 0%, #6c746c 80%);
+    /*background-color: rgb(31, 30, 30)*/
+}
+
+.texto {
+    column-count: 3;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    column-rule: 3px solid black;
+
+}
+
+.texto p {
+    margin-top: 0;
+}
+
+i {
+    color: black;
+}
+
+a {
     color: white;
     margin-left: 1em;
 }
 
-    a:hover{
-        color: aqua;
-    }
-    
+a:hover {
+    color: aqua;
+}
+
 
 table {
     margin-left: auto;
@@ -25,35 +64,27 @@ table {
     text-justify: auto;
     width: 80%;
     border-collapse: collapse;
-    
+
 }
 
-    th{
-        padding: 10px;
-        text-align: center;
-        border: solid black;
-    }
+th {
+    padding: 10px;
+    text-align: center;
+    border: solid black;
+}
 
-    td{
-        padding: 20px;
-        border: solid black;
-    }
+td {
+    padding: 20px;
+    border: solid black;
+}
 
-    thead{
-        background: #a3b0f1;
-        border-bottom: solid 5px black;
-        color: black;
-    }
+thead {
+    background: #a3b0f1;
+    border-bottom: solid 5px black;
+    color: black;
+}
 
-    .header{
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        text-align: center;
-        color: rgb(240, 240, 248);
-        background-color: rgb(31, 30, 30)
-    }
-
-p{
+p {
     margin-top: 20px;
     margin-bottom: 1.5em;
     margin-left: auto;
@@ -62,15 +93,18 @@ p{
     width: 95%;
 }
 
-.img{
+
+
+.img {
     margin-top: -0.5em;
     margin-bottom: 0em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
 }
 
-.text-footer{
+.text-footer {
     margin-top: 0em;
     margin-bottom: 1.5em;
     font-family: cursive;
@@ -79,28 +113,28 @@ p{
     color: rgb(0, 0, 0);
 }
 
-.container{
+.container {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
     width: 100%;
 }
 
-.left{
+.left {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     width: 21%;
 }
 
-.input{
+.input {
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 400px;
     height: 25px;
 }
 
-textarea{
+textarea {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -108,31 +142,29 @@ textarea{
     height: 150px;
 }
 
-.button{
+.button {
     margin-bottom: 2em;
     background-color: green;
-    color:white;
+    color: white;
     border: solid green;
     margin-right: 20em;
     width: 80px;
     height: 30px;
 }
-.button:hover{
+
+.button:hover {
     background-color: greenyellow;
     border: solid greenyellow;
     color: black;
 }
-.btn{ 
+
+.btn {
     margin-bottom: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-span{
+span {
     margin-left: 2em;
     margin-right: 2em;
 }
-
-
-
-
