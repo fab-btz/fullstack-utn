@@ -70,6 +70,7 @@ aside {
 		text-decoration: none;
 		color: #000;	
 	}
+	
 	section {
 		border-bottom: solid 1px black;
 		background: #F1F2C0;
@@ -79,8 +80,6 @@ aside {
 
 	aside {
 		background: #CCC59E;
-		display: flex;
-		flex-direction: column;
 		width: 100%;
 	}
 }
