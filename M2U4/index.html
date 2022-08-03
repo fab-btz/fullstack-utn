@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea en Bootstrap</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Fab-Btz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item nav">
+                        <a class="nav-link active" href="index.html">Inicio
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="botones.html">Botones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Desplegable</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Accion</a>
+                            <a class="dropdown-item" href="#">Otra Accion</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Link Separado</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Buscar">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-xl">
+        <br>
+        <div class="bs-docs-section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h1 id="containers">Bienvenido, aqui podras encontrar como es un maquetado avanzado en CSS3
+                            utilizando Bootstrap</h1>
+                    </div><br>
+                </div>
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h3>En la parte superior se puede ver como se definio una barra de navegacion con un menu con
+                            opciones y hasta un input y boton para busquedas.</h3>
+                    </div><br><br>
+                </div>
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h3>Bootstrap trabaja con flex box. Separadas por filas y columnas. Aqui hice una fila con 3
+                            columnas. En total pueden ser 12</h3>
+                    </div><br><br>
+                </div>
+                <div class="col-6">Columna 1 - Tiene un ancho col-6</div>
+                <div class="col-3">Columna 2 - Tiene un ancho col-3</div>
+                <div class="col-3">Columna 3 - Tiene un ancho col-3</div>
+            </div><br><br>
+            <div class="page-header">
+                <h3>Esto ultimo sirve para ordenar nuestro contenido en filas y columnas. <br><br> En el menú podras ver
+                    algunos ejemplos mas de lo
+                    que podemos hacer y usar <br></h3>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="cal-lg-12">
+                    <h2>No podia dejar poasar la oportunidad de mostrarte lo que mas me gusta de BOOTSTRAP</h2>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 La Ventana Modal
+            </button>
+                </div>
+
+            </div>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Titulo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+</body>
+</html>
