@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio de Transporte</title>
+    
+    <script>
+        var distancia = prompt('Ingrese la distancia a recorrer en METROS: ', ''); 
+        /* 0 a 1000 metros = pie
+         1000 a 10000 metros = bicicleta
+        10000 a 30000 metros = colectivo
+        30000 a 100000 metros = auto
+        +100000 = avion*/
+        while (distancia <= 0 && distancia != null) {
+            alert('Debe ingresar un POSITIVO (+) MAYOR (>) a 0 (CERO)');
+            var distancia = prompt('Ingrese la distancia a recorrer en METROS: ', '');
+        }
+        if (distancia == null){
+                alert('No ha ingresado ningun valor');
+                document.write(`No ha ingresado ningun valor`);
+                console.log(`No ha ingresado ningun valor`);
+            }
+        if (distancia >0 && distancia <= 1000) {
+                document.write(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR A PIE`);
+                console.log(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR A PIE`);
+            }else if (distancia >= 1000 && distancia <= 10000){
+                document.write(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN BICICLETA`);
+                console.log(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN BICICLETA`);
+            }else if (distancia >= 10000 && distancia <= 30000) {
+                document.write(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN COLECTIVO`);
+                console.log(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN COLECTIVO`);
+            }else if (distancia >= 30000 && distancia <= 100000){
+                document.write(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN AUTO`);
+                console.log(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN AUTO`);
+            }else if (distancia >=100000){
+                document.write(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN AVION`);
+                console.log(`Debido que la distancia a recorrer es de ${distancia} mts, le recomendamos IR EN AVION`);
+            }
+      </script>
+</head>
+<body>
+    
+</body>
+</html>

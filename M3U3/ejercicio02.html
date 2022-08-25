@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Math.Max</title>
+    
+    <script>
+        /* 
+        //ESTA ERA LA PRIMERA FORMA QUE SE ME OCURRIO Y FUNCIONA:
+
+        var num1 = prompt('Ingrese un Número - 1 de 4:');
+        var num2 = prompt('Ingrese un Número - 2 de 4:');
+        var num3 = prompt('Ingrese un Número - 3 de 4:');
+        var num4 = prompt('Ingrese un Número - 4 de 4:');
+        var miArray = [num1,num2,num3,num4];
+
+        document.write(`Los números del array son: ${miArray} <br><br>`);
+        console.log(`Los números del array son: ${miArray}`);
+        
+        var max = Math.max(...miArray);
+        console.log(`El mayor es: ${max}`);
+        document.write(`El mayor es ${max}`);
+        //INVESTIGANDO ENCONTRE QUE LA MEJOR ES ESTA:
+        
+        */
+
+        numsArray = [];
+
+        for (let i = 1; i <= 5; i ++){
+           numsArray.push([prompt(`Ingrese un Numero - ${i} de 5:`)]);
+        }
+
+        document.write(`Los números del array son: ${numsArray} <br><br>`);
+        console.log(`Los números del array son: ${numsArray}`);
+        
+        var max = Math.max(...numsArray);
+        document.write(`El mayor es: ${max}`);
+        console.log(`El mayor es: ${max}`);
+
+      </script>
+</head>
+<body>
+    
+</body>
+</html>
