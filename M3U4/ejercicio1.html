@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Fondo</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }    
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            color: white;
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px black;
+        }
+    </style>
+    <script>
+         window.onload = function(){  
+            const colorRojo = document.getElementById('rojo');
+            colorRojo.style.backgroundColor = 'red';            
+            colorRojo.style.cursor = 'pointer';                
+            const colorVerde = document.getElementById('verde');
+            colorVerde.style.backgroundColor = 'green';
+            colorVerde.style.cursor = 'pointer';
+            const colorAzul = document.getElementById('azul');
+            colorAzul.style.backgroundColor = 'blue';
+            colorAzul.style.cursor = 'pointer';
+        }
+        
+        function cambiarColor (color) {
+            if (color === 'rojo') {
+                document.body.style.backgroundColor = 'red'
+            }
+            if (color === 'verde') {
+                document.body.style.backgroundColor = 'green'
+            }
+            if (color === 'azul') {
+                document.body.style.backgroundColor = 'blue'
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cuadrado" id="rojo" onclick="cambiarColor('rojo')">Rojo</div>
+        <div class="cuadrado" id="verde" onclick="cambiarColor('verde')">Verde</div>
+        <div class="cuadrado" id="azul" onclick="cambiarColor('azul')">Azul</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+    <style>
+        * {
+            padding: 0px 20px 0 5px;
+        }
+    </style>
+    <script>
+        function contar(){
+            var texto = document.form.texto.value;
+            var longitud = texto.length;
+            document.getElementById("contador").innerHTML = `<h3> ${longitud} Caracteres </h3>`;
+        } 
+    </script>
+</head>
+<body>
+    <form name="form">
+        <h1>Contador de Caracteres</h1>
+
+        <textarea name="texto" onkeyup="contar(this)" cols="50" rows="30" autofocus></textarea>
+        
+        <label for="" id="contador"><h3> 0 Caracteres </h3></label>
+        
+    </form>
+</body>
+</html>
