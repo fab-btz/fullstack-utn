@@ -34,10 +34,20 @@
                 nota: 8
             }
         ];
-        
+        //forma de la profe
+        // const aprobados = alumnos.filter(function (alumno){
+        //     return alumno.nota >= 7;
+        // })
+
+        //mi forma de interactuar con el array y que cumpla con la condicion
         var aprobados = alumnos.filter(alumnos => alumnos.nota >= 7);
-        console.log(alumnos);
-        console.log(aprobados);
+        console.log('Lista de alumnos:',alumnos);
+        console.log('Aprobados:',aprobados);
+
+        for (let i = 0; i < aprobados.length; i++) {
+            // lo que no pude hacer para mostar por pantalla (DOM), los alumnos aprobados
+            document.write(`<p>Alumno: ${aprobados[i].nombre}, Nota: ${aprobados[i].nota}</p>`);                     
+        }
 
     </script>
 </head>

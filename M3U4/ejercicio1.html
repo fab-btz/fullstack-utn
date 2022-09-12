@@ -34,25 +34,26 @@
             colorAzul.style.backgroundColor = 'blue';
             colorAzul.style.cursor = 'pointer';
         }
-        
+        //solucion de la profesora, mas facil sin if
         function cambiarColor (color) {
-            if (color === 'rojo') {
-                document.body.style.backgroundColor = 'red'
-            }
-            if (color === 'verde') {
-                document.body.style.backgroundColor = 'green'
-            }
-            if (color === 'azul') {
-                document.body.style.backgroundColor = 'blue'
-            }
+            document.body.style.backgroundColor = color;
+            // if (color === 'rojo') {
+            //     document.body.style.backgroundColor = 'red'
+            // }
+            // if (color === 'verde') {
+            //     document.body.style.backgroundColor = 'green'
+            // }
+            // if (color === 'azul') {
+            //     document.body.style.backgroundColor = 'blue'
+            // }
         }
     </script>
 </head>
 <body>
     <div class="contenedor">
-        <div class="cuadrado" id="rojo" onclick="cambiarColor('rojo')">Rojo</div>
-        <div class="cuadrado" id="verde" onclick="cambiarColor('verde')">Verde</div>
-        <div class="cuadrado" id="azul" onclick="cambiarColor('azul')">Azul</div>
+        <div class="cuadrado" id="rojo" onclick="cambiarColor('red')">Rojo</div>
+        <div class="cuadrado" id="verde" onclick="cambiarColor('green')">Verde</div>
+        <div class="cuadrado" id="azul" onclick="cambiarColor('blue')">Azul</div>
     </div>
 </body>
 </html>
