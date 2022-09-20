@@ -46,6 +46,7 @@ function AboutSection() {
                             <span className="badge rounded-pill bg-danger" style={{fontWeight:'700', fontSize:'1.2rem', paddingTop:'8px'}}>+ 20</span>
                             <span style={{marginLeft:'20px', fontWeight:'800', fontSize:'1.2rem'}}>Proyectos realizados</span>
                         </p>
+                        <br></br>
                         <p>
                             <a href="CV-Fabián Benitez.pdf" target='_blank'>
                                 <button className="btn btn-primary">Descargar CV</button>

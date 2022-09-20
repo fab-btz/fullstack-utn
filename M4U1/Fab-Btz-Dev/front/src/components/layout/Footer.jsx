@@ -5,11 +5,13 @@ function Footer() {
 	return (
 		<Navbar expand='lg' bg='primary' variant='dark'>
 			<div className='col-md-12 text-center'>
-				<p style={{color:'white'}}>
-					Copyright &copy; {(new Date().getFullYear())}
-					|  Todos los derechos reservados | <i className="icon-heart color-danger" aria-hidden="true"></i> by <a style={{color:'white'}}
-						href="#">Me</a>
-				</p>
+				<h5 style={{color:'white'}}>
+					<p>
+						Copyright &copy; {(new Date().getFullYear())}
+						|  Todos los derechos reservados | <i className="icon-heart color-danger" aria-hidden="true"></i> by <a style={{color:'white'}}
+						href='#'>Me</a>
+					</p>
+				</h5>
 			</div>
 		</Navbar>
 	);

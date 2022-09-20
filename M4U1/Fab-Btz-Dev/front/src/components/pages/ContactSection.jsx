@@ -11,30 +11,36 @@ function ContactSection() {
                     <div className="col-lg-6"><br></br>
                         <form action="mailto:fabianbenitez25@gmail.com">
                             <div className="row mb-3">
-                                <label for="inputEmail3" className="col-sm-2 col-form-label">Nombre: </label>
+                                <label className="col-sm-2 col-form-label">Nombre: </label>
                                 <div className="col-sm-10">
-                                    <input type="text" id="disabledInput" className="form-control" name='nombre' />
+                                    <input type="text" className="form-control" name='nombre' />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputEmail3" className="col-sm-2 col-form-label">Email: </label>
+                                <label className="col-sm-2 col-form-label">Email: </label>
                                 <div className="col-sm-10">
                                     <input type="mail" className="form-control" name='email' />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputEmail3" className="col-sm-2 col-form-label">Asunto: </label>
+                                <label className="col-sm-2 col-form-label">Asunto: </label>
                                 <div className="col-sm-10">
                                     <input type="text" className="form-control" name='asunto' />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputEmail3" className="col-sm-2 col-form-label">Mensaje: </label>
+                                <label className="col-sm-2 col-form-label">Mensaje: </label>
                                 <div className="col-sm-10">
-                                    <textarea name="" id="" cols="30" rows="7" className="form-control"
-                                        placeholder="Mensaje"></textarea>
+                                    <textarea name="mensaje" id="" cols="30" rows="7" className="form-control"></textarea>
+                                </div>
+                            </div><br></br>
+                            <div className="row mb-3">
+                                <label className="col-sm-2 col-form-label"></label>
+                                <div className="col-sm-10">
+                                <button type="submit" className="btn btn-danger">Enviar</button>
                                 </div>
                             </div>
+                            
                         </form>
                     </div>
                     <div className="col-lg-6">

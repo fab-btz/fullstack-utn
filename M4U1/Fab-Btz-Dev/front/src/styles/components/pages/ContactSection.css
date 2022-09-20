@@ -1,14 +1,14 @@
 .contact {
     margin-top: 50px;
-    min-height: 76vh;
+    min-height: 76.8vh;
   }
   
   .contact-picture {
     display: flex;
     align-items: flex-end;
-    justify-content: right;
+    justify-content: center;
     box-shadow: 0 1px 0px 0px var(--white);
-    height: 420px;
+    height: 550px;
     width: auto;
   }
   

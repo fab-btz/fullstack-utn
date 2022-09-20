@@ -10,7 +10,7 @@ function SkillsSection() {
             <h1>Habilidades</h1>
             <p className="lead">Autodidacta. Con constancia, disciplina y práctica uno puede sacar lo mejor de sí mismo.</p>
           </div>
-
+          <div className="skills-center">
           <div className="col-md-6" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">SQL - MySQL </span>
             <div className="progress">
@@ -64,7 +64,7 @@ function SkillsSection() {
               </div>
             </div>
           </div>
-
+          </div>
         </div>
       </div>
     </div>
