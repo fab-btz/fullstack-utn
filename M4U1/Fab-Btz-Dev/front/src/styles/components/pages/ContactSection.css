@@ -1,8 +1,6 @@
-.b {
-    display: flex;
-    justify-content: space-between;
+.contact {
     margin-top: 50px;
-    margin-bottom: 40px;
+    min-height: 75vh;
   }
   
   .contact-picture {

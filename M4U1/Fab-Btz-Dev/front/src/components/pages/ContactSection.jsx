@@ -3,7 +3,7 @@ import "../../styles/components/pages/ContactSection.css";
 
 function ContactSection() {
     return (
-        <div className="container-xxl">
+        <div className="container-xxl contact">
             <div className="page-header">
 
                 <div className="row">

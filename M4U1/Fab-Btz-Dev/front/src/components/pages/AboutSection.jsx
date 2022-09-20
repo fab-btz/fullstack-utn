@@ -3,7 +3,7 @@ import "../../styles/components/pages/AboutSection.css";
 
 function AboutSection() {
     return (
-        <div className="container-xxl b">
+        <div className="container-xxl about">
             <div className="page-header">
                 <div className="row">
                     <div className="col-lg-6">

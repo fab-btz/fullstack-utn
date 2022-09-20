@@ -1,8 +1,9 @@
 import React from 'react';
+import "../../styles/components/pages/SkillsSection.css";
 
 function SkillsSection() {
   return (
-    <div className="container-xxl b">
+    <div className="container-xxl skills">
       <div className="page-header">
         <div className="row">
           <div className="col-lg-12">
