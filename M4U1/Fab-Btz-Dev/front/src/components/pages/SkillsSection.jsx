@@ -11,7 +11,7 @@ function SkillsSection() {
             <p className="lead">Autodidacta. Con constancia, disciplina y práctica uno puede sacar lo mejor de sí mismo.</p>
           </div>
           <div className="skills-center">
-          <div className="col-md-6" style={{paddingTop: "20px"}}>
+          <div className="col-md-8" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">SQL - MySQL </span>
             <div className="progress">
               <div className="progress-bar bg-danger" role="progressbar" style={{width: "60%"}}>
@@ -20,7 +20,7 @@ function SkillsSection() {
             </div>
           </div>
 
-          <div className="col-md-6" style={{paddingTop: "20px"}}>
+          <div className="col-md-8" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">PHP </span>
             <div className="progress">
               <div className="progress-bar bg-danger" role="progressbar" style={{width: "85%"}}>
@@ -29,7 +29,7 @@ function SkillsSection() {
             </div>
           </div>
 
-          <div className="col-md-6" style={{paddingTop: "20px"}}>
+          <div className="col-md-8" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">HTML5 </span>
             <div className="progress">
               <div className="progress-bar bg-danger" role="progressbar" style={{width: "95%"}}>
@@ -38,7 +38,7 @@ function SkillsSection() {
             </div>
           </div>
 
-          <div className="col-md-6" style={{paddingTop: "20px"}}>
+          <div className="col-md-8" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">CSS3 </span>
             <div className="progress">
               <div className="progress-bar bg-danger" role="progressbar" style={{width: "80%"}}>
@@ -47,7 +47,7 @@ function SkillsSection() {
             </div>
           </div>
 
-          <div className="col-md-6" style={{paddingTop: "20px"}}>
+          <div className="col-md-8" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">Bootstrap </span>
             <div className="progress">
               <div className="progress-bar bg-danger" role="progressbar" style={{width: "90%"}}>
@@ -56,7 +56,7 @@ function SkillsSection() {
             </div>
           </div>
 
-          <div className="col-md-6" style={{paddingTop: "20px"}}>
+          <div className="col-md-8" style={{paddingTop: "20px"}}>
             <span className="badge rounded-pill bg-primary">React-JS </span>
             <div className="progress">
               <div className="progress-bar bg-danger" role="progressbar" style={{width: "45%"}}>
