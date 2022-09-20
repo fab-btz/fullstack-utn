@@ -1,0 +1,98 @@
+.b {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  box-shadow: 0 1px 0px 0px var(--white);
+  border-radius: 0;
+  height: 500px;
+  width: 500px;
+  margin: 0 0px 0 100px;
+}
+
+.picture-bg {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../images/perfil4.jpg");
+  background-size: cover;
+  border-radius: 10%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge{
+  margin-left: 20px;
+  margin-bottom:20px;
+}
+
+@media screen and (max-width: 1135px) {
+  .picture {
+    margin: 0 0px 0 40px;
+    justify-content: center;
+  }
+  .about-me {
+    margin: 0 0px 0 10px;
+  }
+  .badge{
+    margin-left: 15px
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+
+  .badge{
+    margin-left: 10px;
+    margin-bottom:18px;
+  }
+  .lead {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 810px) {
+  .picture {
+    margin: 0 !important;
+  }
+  .badge{
+    margin-left: 2px;
+    margin-bottom:12px;
+    font-size: 0.75rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  
+  .badge{
+    margin-left: 0px;
+    margin-bottom:10px;
+    font-size: 0.65rem;
+  }
+  .lead {
+    font-size: 0.8rem;
+  }
+}

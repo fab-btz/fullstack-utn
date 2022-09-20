@@ -1,0 +1,32 @@
+.b {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-picture {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    box-shadow: 0 1px 0px 0px var(--white);
+    height: 420px;
+    width: auto;
+  }
+  
+  .contact-picture-bg {
+    height: 92%;
+    width: 92%;
+    background-image: url("../../images/project-2.jpg");
+    background-size: cover;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  @media screen and (max-width: 993px) {
+    .contact-picture {
+        display: none;
+    }
+
+  }

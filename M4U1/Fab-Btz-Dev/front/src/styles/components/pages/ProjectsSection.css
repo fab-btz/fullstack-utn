@@ -1,0 +1,29 @@
+.img-container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.over-text{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image{
+    height: 500px;    
+    width: 900px;
+}
+
+.center a{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+}
