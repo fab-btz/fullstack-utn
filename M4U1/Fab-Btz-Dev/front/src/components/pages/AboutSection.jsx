@@ -47,7 +47,7 @@ function AboutSection() {
                             <span style={{marginLeft:'20px', fontWeight:'800', fontSize:'1.2rem'}}>Proyectos realizados</span>
                         </p>
                         <p>
-                            <a href="CV-Fabián Benitez.pdf" download="CV-Fabian Benitez.pdf"> 
+                            <a href="CV-Fabián Benitez.pdf" target='_blank'>
                                 <button className="btn btn-primary">Descargar CV</button>
                             </a>
                         </p>

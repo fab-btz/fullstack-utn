@@ -1,5 +1,5 @@
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /*STYLES*/
 import './styles/css/WITHEbootstrap.min.css';
 
@@ -17,12 +17,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <HomeSection />
-      <AboutSection />
-      <ResumeSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
+
+      <BrowserRouter>
+        <Routes>
+           <Route path='/' element={ <HomeSection /> } />
+           <Route path='/about' element={ <AboutSection /> } />
+           <Route path='/resumen' element={ <ResumeSection /> } />
+           <Route path='/skills' element={ <SkillsSection /> } />
+           <Route path='/pojects' element={ <ProjectsSection /> } />
+           <Route path='/contact' element={ <ContactSection /> } />
+        </Routes>
+      </BrowserRouter>
+
       <Footer />
     </div>
   );
