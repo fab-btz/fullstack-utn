@@ -1,8 +1,9 @@
 import React from 'react';
+import "../../styles/components/pages/ResumeSection.css";
 
 function ResumeSection() {
   return (
-    <div className="container-xxl b">
+    <div className="container-xxl resume">
       <div className="page-header">
         <div className="row">
           <div className="col-lg-12">

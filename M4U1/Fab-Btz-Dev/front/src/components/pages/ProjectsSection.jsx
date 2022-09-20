@@ -4,7 +4,7 @@ import bgimage from '../../styles/images/image_1.jpg';
 
 function ProjectsSection() {
   return (
-    <div className="container-xxl b">
+    <div className="container-xxl projects">
       <div className="page-header">
         <div className="row">
 
