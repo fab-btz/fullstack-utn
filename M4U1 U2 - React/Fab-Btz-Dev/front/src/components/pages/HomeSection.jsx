@@ -1,7 +1,7 @@
 import React from 'react';
 import Typical from 'react-typical';
 import "../../styles/components/pages/HomeSection.css";
-import { Container, Row, Col, } from 'react-bootstrap';
+// import { Container, Row, Col, } from 'react-bootstrap';
 
 
 function HomeSection() {
@@ -11,19 +11,19 @@ function HomeSection() {
                 <div className="profile-details">
                     <div className="colz">
                         <div className="colz-icon">
-                            <a href="#">
+                            <a href='https://www.facebook.com/fabian.benitez.129/'>
                                 <i className="fa fa-facebook-square"></i>
                             </a>
-                            <a href="#">
+                            <a href='https://google.com'>
                                 <i className="fa fa-google-plus-square"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/fabian.benitez.129/">
                                 <i className="fa fa-instagram"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.youtube.com/channel/UCbQj5Csl6xxCNXPJfca1RDg">
                                 <i className="fa fa-youtube-square"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://twitter.com/FabianBenitez87">
                                 <i className="fa fa-twitter"></i>
                             </a>
                         </div>

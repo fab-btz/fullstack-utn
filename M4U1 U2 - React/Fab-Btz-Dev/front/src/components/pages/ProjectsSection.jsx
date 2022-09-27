@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/components/pages/ProjectsSection.css'
-import bgimage from '../../styles/images/image_1.jpg';
+import bgImage from '../../styles/images/image_1.jpg';
 
 function ProjectsSection() {
   return (
@@ -20,9 +20,9 @@ function ProjectsSection() {
           <div className="col-md-12 text-center">
               <div className='img-container'>
                 <img 
-                  src={bgimage}
-                  className='image'
-                  alt='Image-Projects'
+                  src={bgImage}
+                  className='imagen'
+                  alt='Img-Projects'
                 />  
               </div>
               <div className="over-text"></div>
