@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+// import logo from '../../styles/images/logo.png'
 function Header() {
     return (
         <Navbar collapseOnSelect expand='lg' bg='primary' variant='dark'>
@@ -26,8 +27,7 @@ function Header() {
                         <Link className='nav-link' to='/resume'>Resumen</Link>
                         <Link className='nav-link' to='/skills'>Habilidades</Link>
                         <Link className='nav-link' to='/pojects'>Proyectos</Link>
-                        <Link className='nav-link' to='/contact'>Contacto</Link>
-                        
+                        <Link className='nav-link' to='/contact'>Contacto</Link>           
                         
                     </Nav>
                 </Navbar.Collapse>
