@@ -6,16 +6,12 @@ var logger = require('morgan');
 
 //llamamos al arvhivo .env
 require('dotenv').config();
-//var pool = require('./models/db');
-//generamos variable de session
-var session = require('express-session');
-
+var pool = require('./models/db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 // GENERAMOS VARIABLE CON RUTA PARA LOGIN
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require('./routes/admin/novedades');
 const { createPool } = require('mysql');
 
 var app = express();
@@ -30,33 +26,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//requerimos inicio de session antes de iniciar el sitio
-
-app.use(session({
-  secret:'co15464831cho',
-  cookie: {maxAge: null},
-  resave: false,
-  saveUninitialized: true
-}))
-
-secured = async (req, res, next) => {
-  try {
-    console.log(req.session.id_usuario);
-    if (req.session.id_usuario) {
-      next();
-    } else {
-      res.redirect('admin/login');
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-//-----------mod---------------------------------
+//-----------------------------------------------------
+//mod
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades',secured, adminRouter);
 
 // Consulta select
 /*pool.query('SELECT * FROM empleados').then(function (resultados){
