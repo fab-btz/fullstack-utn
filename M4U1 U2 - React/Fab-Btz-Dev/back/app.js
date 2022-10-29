@@ -16,6 +16,7 @@ var usersRouter = require('./routes/users');
 // GENERAMOS VARIABLE CON RUTA PARA LOGIN
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+var privateRouter = require('./routes/admin/administrador');
 const { createPool } = require('mysql');
 
 var app = express();
@@ -56,7 +57,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 //-----------mod---------------------------------
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades',secured, adminRouter);
+app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/administrador', secured, privateRouter);
+
 
 // Consulta select
 /*pool.query('SELECT * FROM empleados').then(function (resultados){

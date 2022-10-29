@@ -30,7 +30,15 @@ router.post('/', async (req, res, next) => {
       req.session.id_usuario = data.id;
       req.session.name = data.name;
       
+      //redireccionar segun role de usuario
+      // if (req.session.id_usuario == 2) {
+      //   res.redirect('/admin/administrador');  
+      // } else {
+      //   res.redirect('/admin/novedades');  
+      // }
+
       res.redirect('/admin/novedades');
+      
     } else {
       res.render('admin/login', {
         layout: 'admin/layout',
