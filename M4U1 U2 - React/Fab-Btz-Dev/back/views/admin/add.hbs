@@ -1,0 +1,50 @@
+<section class="gradient-custom">
+	<div class="container py-5 h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+				<div class="card text-white bg-primary mb-3" style="border-radius: 1rem;"> {{!--width: 800px; margin-left: -120px;!--}}
+					<div class="card-body p-5 text-center" style="">
+
+						<div class="mb-md-5 mt-md-4 pb-5">
+
+							<h2 class="fw-bold mb-2 text-uppercase">Agregar Proyecto Nuevo</h2>
+
+							<form action="/admin/projects/add" method="post">
+
+								<div class="form-outline form-white mb-4">
+									<input type="text" name="name" class="form-control" />
+									<label class="form-label">Nombre</label>
+								</div>
+								<div class="form-outline form-white mb-4">
+									<textarea name="description" class="form-control"></textarea>
+									<label class="form-label">Descripción</label>
+								</div>
+								<div class="form-outline form-white mb-4">
+									<input type="text" name="lenguage" class="form-control" />
+									<label class="form-label">Lenguaje</label>
+								</div>
+								<div class="form-outline form-white mb-4">
+									<input type="text" name="type" class="form-control" />
+									<label class="form-label">Tipo</label>
+								</div>
+								<div class="form-outline form-white mb-4">
+									<input type="text" name="url" class="form-control" />
+									<label class="form-label">URL</label>
+								</div>
+								<div class="form-outline form-white mb-4">
+									<input type="text" name="image" class="form-control" />
+									<label class="form-label">Imagén</label>
+								</div>
+								{{#if error}}
+								<p class="mb-5 pb-lg-2 mb-0 text-danger">{{message}}</p>
+								{{/if}}
+								<button class="btn btn-outline-light px-5" type="submit">Guardar</button>
+								<a href="/admin/projects" class="btn btn-outline-light px-5">Cancelar</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

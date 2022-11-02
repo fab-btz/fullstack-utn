@@ -1,20 +1,22 @@
 var express = require('express');
-const { route } = require('..');
+//const { route } = require('..');
 var router = express.Router();
 
 var usersModel = require('./../../models/usersModel');
 
 router.get('/', function(req, res, next) {
   res.render('admin/login',{ //login.hbs
-    layout:'admin/layout', title: 'Login'  //layout.hbs
+    layout:'admin/layout', //layout.hbs 
+    title: 'Login'
   });
 });
 
 router.get('/logout', function (req, res, next) {
   req.session.destroy();
   //res.redirect('/admin/login');
-  res.render('admin/login', {
-    layout: 'admin/layout'
+  res.render('./admin/login', {
+    layout: 'admin/layout',
+    title: 'Login'
   });
 });
 
@@ -36,13 +38,14 @@ router.post('/', async (req, res, next) => {
       // } else {
       //   res.redirect('/admin/novedades');  
       // }
-
-      res.redirect('/admin/novedades');
+      // res.redirect('/admin/novedades'); yo cambie a proyectos
+      res.redirect('/admin/projects');
       
     } else {
-      res.render('admin/login', {
+      res.render('./admin/login', {
         layout: 'admin/layout',
-        error: true
+        error: true,
+        title: 'Login'
       });
     }
   } catch (error) {
