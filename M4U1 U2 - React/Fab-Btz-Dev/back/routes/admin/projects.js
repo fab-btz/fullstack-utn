@@ -50,12 +50,46 @@ router.post('/add', async (req, res, next) => {
   }
 });
 
-router.get('./delete', (req, res, next) => {
-  res.render('admin/add', {
+router.get('/delete/:id', async (req, res, next) => {
+  var id = req.params.id;
+  await projectsModel.deleteProject(id);
+  console.log(id);
+  res.redirect('/admin/projects');
+});
+
+router.get('/edit/:id', async (req, res, next) => {
+  let id = req.params.id;
+  let project = await projectsModel.getProjectById(id);
+  res.render('./admin/edit', {
     layout: 'admin/layout',
-    title: 'Agregar Proyecto',
-    message: 'Elemento eliminado con exito!'
+    title: 'Editar',
+    project
   });
 });
+
+router.post('/edit', async (req, res, next) => {
+  try {
+    let obj = {
+      name: req.body.name,
+      lenguage: req.body.lenguage,
+      type: req.body.type,
+      url: req.body.url,
+      description: req.body.description,
+      image: req.body.image
+    }
+
+    await projectsModel.editProject(obj, req.body.id);
+    res.redirect('/admin/projects');
+
+  } catch (error) {
+    console.log(error);
+    res.render('./admin/edit', {
+      layout: 'admin/layout',
+      title: 'Editar',
+      error: true,
+      message: 'No se pudo modificar el Proyecto'
+    })
+  }
+})
 
 module.exports = router;

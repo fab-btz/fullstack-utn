@@ -116,12 +116,76 @@ body {
     -webkit-tap-highlight-color: transparent
 }
 
+/* ACA AGREGO YO MI ESTILO OUTLINE INPUT LABEL */
+.form-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: auto;
+    transition: 0.5s;
+}
+
+.form-outline input {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 255); */
+    border: 1px solid var(--bs-danger);
+    background: var(--bs-gray-900);
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    font-size: 1.2em;   
+}
+.form-outline label {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1.1em;
+    color: red;
+    transition: 0.5s;
+}
+.form-outline input:valid ~ label,
+.form-outline input:focus ~ label {
+    color:#20c997;
+    transform: translateX(10px) translateY(-25px);
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: var(--bs-gray-900);
+    border-left: 1px solid #20c997;
+    border-right: 1px solid #20c997;
+    letter-spacing: 0.3em;
+}
+.form-outline input:valid,
+.form-outline input:focus {
+    border: 1px solid #20c997;
+}
+
+.form-outline textarea:valid ~ label,
+.form-outline textarea:focus ~ label {
+    color:#20c997;
+    transform: translateX(10px) translateY(-25px);
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: var(--bs-gray-900);
+    border-left: 1px solid #20c997;
+    border-right: 1px solid #20c997;
+    letter-spacing: 0.3em;
+}
+.form-outline textarea:valid,
+.form-outline textarea:focus {
+    border: 1px solid #20c997;
+}
+/* FIN */
 hr {
     margin: 1rem 0;
     color: inherit;
     border: 0;
     border-top: 1px solid;
-    opacity: .25
+    opacity: 0.25
 }
 
 .h1,

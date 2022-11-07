@@ -18,14 +18,25 @@ async function insertProject(obj) {
 }
 
 async function deleteProject(id) {
+    var query = 'DELETE FROM projects WHERE  id = ?';
+    var rows = await pool.query(query, [id]);
+    return rows;
+}
+
+async function getProjectById(id) {
+    var query = 'SELECT * FROM projects WHERE id = ?';
+    var rows = await pool.query(query, [id]);
+    return rows[0];
+}
+
+async function editProject(obj, id) {
     try {
-        var query = 'DELETE FROM projects WHERE  id = ?';
-        var rows = await pool.query(query, [id]);
+        var query = 'UPDATE projects SET ? WHERE id = ?';
+        var rows = await pool.query(query, [obj, id]);
         return rows;
     } catch (error) {
-        console.log(error);
         throw error;
     }
 }
 
-module.exports = { getProjects, insertProject, deleteProject }
+module.exports = { getProjects, insertProject, deleteProject, getProjectById, editProject }
