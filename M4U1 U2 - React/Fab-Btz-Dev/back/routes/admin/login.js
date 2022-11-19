@@ -5,7 +5,7 @@ var router = express.Router();
 var usersModel = require('./../../models/usersModel');
 
 router.get('/', function(req, res, next) {
-  res.render('admin/login',{ //login.hbs
+  res.render('./admin/login',{ //login.hbs SI FALLA TODO AGREGUE EL PUNTO ESE ACA O QUITE YA NO SE
     layout:'admin/layout', //layout.hbs 
     title: 'Login'
   });
