@@ -1,18 +1,26 @@
 import React from 'react';
 
 const ProjectItem = (props) => {
-    const {id, name, lenguge, type, url, image, description, body} = props;
+    const {id, name, lenguage, type, url, image, description, body} = props;
 
     return (
         <div className='project'>
-            <h2>{id} {name}</h2>
-            <h3>{lenguge}</h3>
-            <h3>{type}</h3>
-            <h4> <a href={url}> Link</a></h4>
+            <h3>{id} {name}</h3>
+            <p className="">Lenguaje: {lenguage}</p>
+            <p className="">Tipo: {type}</p>
             
-            <img src={image} alt={name} />
-
-            <h3>{description}</h3>
+            <div className='row'>
+                <div className='col-md-2'>
+                    <a href={url}>
+                        <img src={image} alt={name} />
+                    </a>    
+                </div>
+                <div className='col-md-8'>       
+                <p className="lead">{description}</p>
+                <a href={url}>URL - LINK</a>
+                </div>
+            </div>
+            
             <div dangerouslySetInnerHTML={{ __html: body }} />
             <hr />
         </div>

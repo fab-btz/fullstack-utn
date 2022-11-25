@@ -30,14 +30,14 @@ function ProjectsSection() {
 
           <div className="col-lg-12">
             <h1>Proyectos</h1>
-            <p className="lead">Cuanto con experiencia en desarrollo de sitios y aplicaciones web en PHP.
+            <p >Cuanto con experiencia en desarrollo de sitios y aplicaciones web en PHP.
               <br></br>Iniciando con React y Node JS. -
             </p>
           </div>
 
-          <h2 className="text-danger text-center p-4">Ve mis Trabajos Realizados:</h2>
-
-          <div className="col-md-12 text-center">
+          <h2 className="text-danger">Ve mis Trabajos Realizados</h2>
+          <hr></hr><br></br><br></br>
+          <div className="col-md-12">
             
             {
               loading ? (
@@ -46,12 +46,13 @@ function ProjectsSection() {
               ) : (
                 projects.map(item => 
                   <ProjectItem 
-                    key = {item.id} 
+                    key = {item.id}
                     name = {item.name}
-                    lenguje = {item.lenguje}
+                    description = {item.description}
+                    lenguage = {item.lenguage}
                     type = {item.type}
-                    url = {item.url}
                     image = {item.image}
+                    url = {item.url}
                   />)
             )}
             

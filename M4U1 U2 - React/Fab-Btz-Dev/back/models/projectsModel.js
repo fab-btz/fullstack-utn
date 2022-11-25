@@ -1,7 +1,7 @@
 var pool = require('./db');
 
 async function getProjects() {
-    var query = 'SELECT * FROM projects ORDER BY id DESC';
+    var query = 'SELECT * FROM projects ORDER BY id ASC';
     var rows = await pool.query(query);
     return rows;
 }
