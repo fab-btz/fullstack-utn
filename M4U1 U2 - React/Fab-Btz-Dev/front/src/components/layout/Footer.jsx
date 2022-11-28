@@ -9,7 +9,7 @@ function Footer() {
 					<p>
 						Copyright &copy; {(new Date().getFullYear())}
 						|  Todos los derechos reservados | <i className="icon-heart color-danger" aria-hidden="true"></i> by <a style={{color:'white'}}
-						href='http://localhost:3001/about'>Me</a>
+						href='/about'>Me</a>
 					</p>
 				</h5>
 			</div>
