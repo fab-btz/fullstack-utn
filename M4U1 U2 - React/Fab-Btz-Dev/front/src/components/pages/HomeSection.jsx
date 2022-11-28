@@ -2,6 +2,8 @@ import React from 'react';
 import Typical from 'react-typical';
 import "../../styles/components/pages/HomeSection.css";
 // import { Container, Row, Col, } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 
 function HomeSection() {
@@ -70,9 +72,12 @@ function HomeSection() {
                         </span>
                     </div>
                     <div className="profile-options">
-                        <a href='/contact'>
+                        {/* <a href='/contact'>
                             <button className="btn primary-btn"> Contratame </button>
-                        </a>
+                        </a> */}
+                        
+                        <Link className='btn primary-btn' to='/contact'>Contratame</Link>
+                        
                         <a href="CV-Fabián Benitez.pdf" target='_blank'> 
                         {/*download="CV-Fabian Benitez.pdf"*/}
                             <button className="btn highlighted-btn">Descargar CV</button>
