@@ -50,28 +50,28 @@ const ContactSection = (props) => {
                                 <label className="col-sm-2 col-form-label">Nombre: </label>
                                 <div className="col-sm-10">
                                     <input type="text" className="form-control" name='nombre'
-                                    value={formData.nombre} onChange={handleChange} />
+                                    value={formData.nombre} onChange={handleChange} required/>
                                 </div>
                             </div>
                             <div className="row mb-3">
                                 <label className="col-sm-2 col-form-label">Email: </label>
                                 <div className="col-sm-10">
                                     <input type="mail" className="form-control" name='email' 
-                                    value={formData.email} onChange={handleChange}/>
+                                    value={formData.email} onChange={handleChange} required/>
                                 </div>
                             </div>
                             <div className="row mb-3">
                                 <label className="col-sm-2 col-form-label">Asunto: </label>
                                 <div className="col-sm-10">
                                     <input type="text" className="form-control" name='asunto'
-                                    value={formData.asunto} onChange={handleChange} />
+                                    value={formData.asunto} onChange={handleChange} required/>
                                 </div>
                             </div>
                             <div className="row mb-3">
                                 <label className="col-sm-2 col-form-label">Mensaje: </label>
                                 <div className="col-sm-10">
                                     <textarea name="mensaje" cols="30" rows="7" className="form-control"
-                                    value={formData.mensaje} onChange={handleChange}></textarea>
+                                    value={formData.mensaje} onChange={handleChange} required></textarea>
                                 </div>
                             </div><br></br>
 
