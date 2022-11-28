@@ -70,7 +70,9 @@ function HomeSection() {
                         </span>
                     </div>
                     <div className="profile-options">
-                        <button className="btn primary-btn"> Contratame </button>
+                        <a href='http://localhost:3001/contact'>
+                            <button className="btn primary-btn"> Contratame </button>
+                        </a>
                         <a href="CV-Fabián Benitez.pdf" target='_blank'> 
                         {/*download="CV-Fabian Benitez.pdf"*/}
                             <button className="btn highlighted-btn">Descargar CV</button>
