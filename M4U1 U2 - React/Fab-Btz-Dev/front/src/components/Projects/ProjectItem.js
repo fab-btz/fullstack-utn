@@ -11,13 +11,13 @@ const ProjectItem = (props) => {
             
             <div className='row'>
                 <div className='col-md-2'>
-                    <a href={url}>
+                    <a href={url} target='_blank'>
                         <img src={image} alt={name} />
                     </a>    
                 </div>
                 <div className='col-md-8'>       
                 <p className="lead">{description}</p>
-                <a href={url}>URL - LINK</a>
+                <a href={url} target='_blank'>URL - LINK</a>
                 </div>
             </div>
             

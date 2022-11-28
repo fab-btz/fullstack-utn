@@ -22,12 +22,12 @@ function Header() {
                         <Nav.Link href='/pojects'>Proyectos</Nav.Link>
                         <Nav.Link href='/contact'>Contacto</Nav.Link>*/}
                         
-                        <Link className='nav-link' to='/'>Inicio</Link>
-                        <Link className='nav-link' to='/about'>Sobre Mí</Link>
-                        <Link className='nav-link' to='/resume'>Resumen</Link>
-                        <Link className='nav-link' to='/skills'>Habilidades</Link>
-                        <Link className='nav-link' to='/pojects'>Proyectos</Link>
-                        <Link className='nav-link' to='/contact'>Contacto</Link>           
+                        <Link className='nav-link' to='./'>Inicio</Link>
+                        <Link className='nav-link' to='./about'>Sobre Mí</Link>
+                        <Link className='nav-link' to='./resume'>Resumen</Link>
+                        <Link className='nav-link' to='./skills'>Habilidades</Link>
+                        <Link className='nav-link' to='./pojects'>Proyectos</Link>
+                        <Link className='nav-link' to='./contact'>Contacto</Link>           
                         
                     </Nav>
                 </Navbar.Collapse>
